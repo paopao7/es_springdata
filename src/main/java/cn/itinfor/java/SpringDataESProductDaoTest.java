@@ -29,6 +29,18 @@ public class SpringDataESProductDaoTest {
         productDao.save(product);
     }
 
+    //更新
+    @Test
+    public void update() {
+        Product product = new Product();
+        product.setId(3L);
+        product.setTitle("苹果手机");
+        product.setCategory("手机");
+        product.setPrice(12999.00);
+        product.setImages("http://www.itinfor.cn/apple.jpg");
+        productDao.save(product);
+    }
+
     //查询所有
     @Test
     public void findAll() {
